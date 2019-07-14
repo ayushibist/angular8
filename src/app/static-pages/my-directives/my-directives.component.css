@@ -1,0 +1,14 @@
+#about {
+    min-height: 350px;
+}
+.business-header {
+    padding-top: 0px !important;
+    background: url('https://images.pexels.com/photos/232/apple-iphone-books-desk.jpg?w=940&h=650&auto=compress&cs=tinysrgb') center center no-repeat scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+h2.tagline {
+    color: #f89406;
+}

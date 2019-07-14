@@ -1,0 +1,17 @@
+.span12 {
+    width: 100%;
+}
+.navbar-inner {
+    width: 100%;
+    margin-right: 12px
+}
+h1.muted {
+    margin-left: 18px;
+    color: #f89406;
+}
+h5.text {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+   
+}

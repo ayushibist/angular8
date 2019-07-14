@@ -1,0 +1,33 @@
+<header class="business-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12  text-center">
+                <hr>
+                <h2 class="tagline">Angular Pipes</h2>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                <hr>
+            </div>
+        </div>
+    </div>
+  </header>
+  
+  <section id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+
+
+          <h3>Date Pipe</h3>
+  
+          <p>John's birthday is {{ birthday | date:format }}</p>
+
+          <button (click)="toggleFormat()" class="btn">Toggle Format</button> <hr />
+
+          <h3>Custom Pipe</h3>
+
+          <p>The exponential form of 5 is {{ 5 | exponential:10 }}</p>
+          
+        </div>
+      </div>
+    </div>
+  </section>

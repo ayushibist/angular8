@@ -1,0 +1,55 @@
+
+
+<!-- <table width="80%" align="center">
+
+  <tr>
+
+    <td colspan="2" align="center">
+      <h2>Sample Angular 8 Application</h2>
+    </td>
+
+  </tr>
+
+  <tr>
+
+    <td valign="top">
+
+        <h2>Two way binding</h2>
+        <label>
+        
+          <input [(ngModel)]="title">
+        
+          <br />
+        
+          <b>{{ title }}</b>
+        
+        </label>
+
+    </td>
+
+    <td>
+
+        <h2>Products</h2>
+        
+        <div *ngFor="let product of products">
+          <h3>
+            <a [title]="product.name + ' details'">
+              {{ product.name }}
+            </a>
+          </h3>
+          <p *ngIf="product.description">
+            Description: {{ product.description }}
+          </p>
+          <button (click)="share(product)">
+            Share
+          </button>
+        </div>
+
+    </td>
+
+  </tr>
+
+</table> -->
+
+
+<router-outlet></router-outlet>

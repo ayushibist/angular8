@@ -1,0 +1,26 @@
+<div class="row">
+  <div class="col-sm-1">  </div>
+  <div class="col-sm-10 mg10">
+    <div class="card pb-5">
+        <div class="card-body" *ngIf="albums">
+            <app-artist-info></app-artist-info>
+            <div class="row">
+                <div class="col-sm-3"  *ngFor="let album of albums.results">
+                  <a (click)="sendAlbumInfo(album)">
+                    <div class="card text-center">
+                      
+                    <div *ngIf="album.artworkUrl100"><img class="card-img-top"  [src]="album.artworkUrl100" alt="..."></div>
+                        <div class="card-body">
+                             <h5 class="text">{{ album.collectionName }}</h5>
+                             <h6 class="text">{{ album.artistName }} </h6>
+                        </div>
+                        
+                    </div></a>
+                </div>
+            </div>
+           
+            
+        </div>
+    </div>
+  </div>
+  </div>

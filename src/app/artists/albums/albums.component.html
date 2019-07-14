@@ -1,0 +1,22 @@
+<header class="business-header">
+  <div class="container">
+      <div class="row">
+          <div class="col-lg-12  text-center">
+              <hr>
+              <h2 class="tagline">Albums</h2>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+              <hr>
+          </div>
+      </div>
+  </div>
+</header>
+
+<div class="container text-center">
+  <div *ngIf="albumInfo">
+    <h2 class="marginTop10">
+      You selected: {{ albumInfo.collectionName }}
+    </h2>
+  </div>
+</div>
+
+<app-album-listing (albumEvent)="receiveAlbum($event)"></app-album-listing>

@@ -1,0 +1,32 @@
+<div class="row">
+<div class="col-sm-1">  </div>
+<div class="col-sm-10 mg10">
+  <div class="card pb-5">
+      <div class="card-body" *ngIf="songs">
+          <div class="row">
+              <div class="col-sm-12">
+                  <h5>Song Listing({{songs.resultCount}})</h5>
+                  <div class="pb-3"></div>
+              </div>
+          </div>
+          <div class="row">
+              <div class="col-sm-3"  *ngFor="let song of songs.results">
+                <a (click)="info(song)">
+                  
+                  <div class="card text-center">
+                    
+                  <div *ngIf="song.artworkUrl100"><img class="card-img-top"  [src]="song.artworkUrl100" alt="..."></div>
+                      <div class="card-body">
+                           <h5 class="text">{{ song.collectionName }}</h5>
+                           <h6 class="text">{{ song.artistName }} <span class="float-right">{{ song.trackPrice }}{{ song.currency }}</span> </h6>
+                      </div>
+                      
+                  </div></a>
+              </div>
+          </div>
+         
+          
+      </div>
+  </div>
+</div>
+</div>
